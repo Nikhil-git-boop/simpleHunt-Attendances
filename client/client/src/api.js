@@ -1,15 +1,9 @@
+import axios from 'axios';
+const API_URL = import.meta.env.VITE_API_URL ;
+const api = axios.create({ baseURL: API_URL + '/api' });
 
-export async function request(path, options = {}) {
-  const headers = options.headers || {}
-  const token = localStorage.getItem('token')
-  if (token) headers['Authorization'] = 'Bearer ' + token
-  const res = await fetch(path, {
-    ...options,
-    headers: { 'Content-Type': 'application/json', ...headers },
-    body: options.body ? JSON.stringify(options.body) : undefined
-  })
-  const text = await res.text().catch(() => '')
-  const data = text ? JSON.parse(text) : {}
-  if (!res.ok) throw data
-  return data
+export function setAuth(token) {
+  if (token) api.defaults.headers.common['Authorization'] = 'Bearer ' + token;
+  else delete api.defaults.headers.common['Authorization'];
 }
+export default api;

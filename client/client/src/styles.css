@@ -1,0 +1,11 @@
+:root { --card-bg: #fff; --muted:#666; --accent:#2b6cb0; }
+body { margin:0; font-family: Inter, Arial, sans-serif; background:#f3f4f6; color:#111; }
+.center-card { max-width:480px; margin:40px auto; background:var(--card-bg); padding:20px; border-radius:8px; box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.center-card input { width:100%; margin:8px 0; padding:10px; border-radius:6px; border:1px solid #ddd; }
+.center-card button { padding:8px 12px; border-radius:6px; border:none; background:var(--accent); color:white; cursor:pointer; margin-top:8px; }
+.nav { display:flex; gap:12px; padding:12px 20px; background:#fff; border-bottom:1px solid #eee; }
+.container { padding:20px; max-width:1000px; margin:0 auto; }
+.grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); gap:12px; margin-top:12px; }
+.emp-card { padding:12px; background:white; border-radius:8px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.search { display:flex; gap:8px; align-items:center; margin-bottom:12px; }
+.buttons button { margin-right:8px; }
