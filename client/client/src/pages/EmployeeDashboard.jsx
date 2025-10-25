@@ -56,9 +56,10 @@ export default function EmployeeDashboard(){
         alert(`You are ${Math.round(dist)} m away from office. Cannot mark. Must be within ${import.meta.env.VITE_MARK_DISTANCE_METERS || 100} m.`);
         return;
       }
-      const today = new Date(); today.setHours(0,0,0,0);
+      const today = new Date();
+      const localDateStr = today.toLocaleDateString('en-CA'); // e.g., "2025-10-25"
       try {
-        await api.post(`${API}/api/employee/mark`, { status, dateStr: today.toISOString() });
+        await api.post(`${API}/api/employee/mark`, { status, dateStr: localDateStr });
         setMessage('Marked ' + status);
         fetchTodayStatus();
       } catch (err) {
