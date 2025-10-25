@@ -8,12 +8,14 @@ const router = express.Router();
 // Employee marks attendance (only allowed if within distance — validate on client, server trusts but records marker and client should pass lat/lng)
 router.post('/mark', authMiddleware('employee'), async (req, res) => {
   const { user } = req;
-  const { status, dateStr } = req.body;
+  const { status, dateStr } = req.body; // dateStr = "YYYY-MM-DD"
   try {
     const emp = await Employee.findById(user.id);
     if (!emp) return res.status(404).json({ error: 'Employee not found' });
-    const date = new Date(dateStr);
-    date.setHours(0,0,0,0);
+
+    // Use local date string to avoid timezone issues
+    const date = new Date(`${dateStr}T00:00:00`);
+
     let att = await Attendance.findOne({ employee: emp._id, date });
     if (!att) {
       att = new Attendance({ employee: emp._id, date, status, markedBy: 'employee' });
@@ -22,12 +24,15 @@ router.post('/mark', authMiddleware('employee'), async (req, res) => {
       att.markedBy = 'employee';
       att.markedAt = new Date();
     }
+
     await att.save();
     res.json({ success: true });
   } catch (err) {
+    console.error(err);
     res.status(500).json({ error: err.message });
   }
 });
+
 
 // Employee get own month
 router.get('/me/month/:year/:month', authMiddleware('employee'), async (req, res) => {
