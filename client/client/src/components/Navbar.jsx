@@ -23,15 +23,14 @@ export default function Navbar() {
     <div  className="navbar-s" style={{ position:'relative' }}>
       <div>
         <Link className='linkss' to="/admin/home">
-          <div className="brand">
-             <img src={logo} alt="Logo" className="logo" />
-       
-          <div>
-            <h1 className="nav-h1">Simple<span className="span-h1">Hunt</span></h1>
-          </div>
-        </div>
+            <div className="brand">
+               <img src={logo} alt="Logo" className="logo" />
+            </div>
+            <div>
+              <h1 className="nav-h1">Simple<span className="span-h1">Hunt</span></h1>
+            </div>
         </Link>
-        
+      
         <div className="nav-actions">
           
           <button className="menu-btn" onClick={() => setMenuOpen(s => !s)}>Menu ▾</button>
@@ -49,5 +48,6 @@ export default function Navbar() {
         </div>
       )}
     </div>
+   
   );
 }
