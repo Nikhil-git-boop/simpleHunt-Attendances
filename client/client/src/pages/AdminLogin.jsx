@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
+import logo from "../assets/Logo (5)[1].png";
 import './Login.css'
 
 const API = import.meta.env.VITE_API_URL;
@@ -25,7 +26,7 @@ export default function AdminLogin() {
   return (
     <div className="bg-page">
         <div className="center-card">
-          <img src="Logo (5)[1].png" alt="Logo" />
+          <img src={logo} alt="Logo" />
            <h1 className='loginH1 ' >Simple<span className='spanH1'>Hunt</span></h1>
           <div className="pages_shifting">
               <h2 className='h1'>Admin Login</h2> 
