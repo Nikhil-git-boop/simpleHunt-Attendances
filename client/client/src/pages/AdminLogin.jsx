@@ -26,7 +26,8 @@ export default function AdminLogin() {
     <div className="bg-page">
         <div className="center-card">
            <h1 className='loginH1 ' >Simple<span className='spanH1'>Hunt</span></h1>
-      <h2 className='h1'>Admin Login</h2>
+      <h2 className='h1'>Admin Login</h2> <p>or</p>
+            <Link className='link' to="/employee/login">Employee Login</Link>
       <form onSubmit={onSubmit}>
         <input
          className="input-box"
@@ -50,7 +51,7 @@ export default function AdminLogin() {
         <Link to="/admin/register"></Link>
       </div>
       <div className='link-box'>
-        <Link className='link' to="/employee/login">Employee Login</Link>
+      
       </div>
     </div>
     </div>
