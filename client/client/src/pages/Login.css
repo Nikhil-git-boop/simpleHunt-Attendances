@@ -36,6 +36,10 @@
    
 
 }
+.pages_shifting{
+    display:flex;
+    flex-direction:row;
+}
 
 .loginH1{
     height: 30px;
