@@ -47,7 +47,7 @@ export default function AdminLogin() {
         <button type="submit">Login</button>
       </form>
       <div>
-        <Link to="/admin/register">Register ?</Link>
+        <Link to="/admin/register"></Link>
       </div>
       <div className='link-box'>
         <Link className='link' to="/employee/login">Employee Login</Link>
