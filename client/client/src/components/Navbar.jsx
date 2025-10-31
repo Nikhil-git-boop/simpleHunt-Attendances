@@ -23,7 +23,7 @@ export default function Navbar() {
       <div >
         <Link className='linkss' to="/admin/home">
           <div className="brand">
-        
+             <img src="Logo (5)[1].png" alt="Logo" />
           <div>
             <h1 className="nav-h1">Simple<span className="span-h1">Hunt</span></h1>
             <div style={{fontSize:'1rem', color:'black', fontWeight:500,top:-1,}}>Media Techologies LLP</div>
