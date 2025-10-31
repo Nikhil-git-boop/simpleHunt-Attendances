@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <div  className="navbar-s" style={{ position:'relative' }}>
       <div >
-        <Link className='linkss' to="/home">
+        <Link className='linkss' to="/admin/home">
           <div className="brand">
         
           <div>
