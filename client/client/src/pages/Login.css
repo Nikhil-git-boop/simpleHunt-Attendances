@@ -47,9 +47,10 @@
     color:#6e6565;
     font-size:40px;
     font-weight:800;
-    margin-bottom:20px;
+    margin-bottom:30px;
     font-family: 'italic';
     text-align:center;
+    margin-top:2px;
 }
 .login-Btn{
     font-size: large;
@@ -99,6 +100,7 @@
     text-align: center;
 }
 .logo{
-    width:250px;
+    width:300px;
     height:120px;
+    margin-bottom:2px;
 }
