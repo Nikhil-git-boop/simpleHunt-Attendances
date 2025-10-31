@@ -26,11 +26,9 @@ export default function Navbar() {
           <div className="brand">
              <img src={logo} alt="Logo" className="logo" />
           <div>
-            <h1 className="nav-h1">Simple<span className="span-h1">Hunt</span></h1>
-            <div style={{fontSize:'1rem', color:'black', fontWeight:500,top:-1,}}>Media Techologies LLP</div>
+            <h1 className="nav-h1">Simple<span className="span-h1">Hunt</span></h1
           </div>
         </div>
-
         </Link>
         
         <div className="nav-actions">
