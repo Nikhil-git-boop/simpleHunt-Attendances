@@ -33,7 +33,7 @@ export default function AddEmployee(){
           <input className="input-box" value={employeeId} onChange={e=>setEmployeeId(e.target.value)} placeholder="Employee ID" required/>
           <input className="input-box" value={phone} onChange={e=>setPhone(e.target.value)} placeholder="Phone" required/>
           <input className="input-box" value={password} onChange={e=>setPassword(e.target.value)} placeholder="Password" required/>
-          <input className="input-box" value={division} onChange={e=>setDivision(e.target.value)} placeholder="Division" />
+          <input className="input-box" value={division} onChange={e=>setDivision(e.target.value)} placeholder="Department" />
           <button type="submit">Create</button>
         </form>
       </div>
