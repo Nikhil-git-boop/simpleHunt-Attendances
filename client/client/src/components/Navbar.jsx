@@ -25,6 +25,7 @@ export default function Navbar() {
         <Link className='linkss' to="/admin/home">
           <div className="brand">
              <img src={logo} alt="Logo" className="logo" />
+          </div>
           <div>
             <h1 className="nav-h1">Simple<span className="span-h1">Hunt</span></h1
           </div>
