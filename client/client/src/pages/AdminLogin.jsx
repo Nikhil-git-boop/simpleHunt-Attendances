@@ -28,7 +28,7 @@ export default function AdminLogin() {
            <h1 className='loginH1 ' >Simple<span className='spanH1'>Hunt</span></h1>
           <div className="pages_shifting">
               <h2 className='h1'>Admin Login</h2> <p>or</p>
-            <Link className='link' to="/employee/login">Employee Login</Link>
+            <Link className='link' to="/employee/login"><h2 className='h1'>Employee Login</h2></Link>
           </div>
     
       <form onSubmit={onSubmit}>
