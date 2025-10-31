@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate,Link } from 'react-router-dom';
-import logo from "../assets/Logo (5)[1].png";
+import logo from "../assets/Logo_transparent.png";
 import './Nav.css'
 
 export default function Navbar() {
@@ -25,9 +25,6 @@ export default function Navbar() {
         <Link className='linkss' to="/admin/home">
             <div className="brand">
                <img src={logo} alt="Logo" className="logo" />
-            </div>
-            <div>
-              <h1 className="nav-h1">Simple<span className="span-h1">Hunt</span></h1>
             </div>
         </Link>
       
