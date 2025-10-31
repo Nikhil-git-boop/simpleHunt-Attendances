@@ -27,8 +27,8 @@ export default function AdminLogin() {
         <div className="center-card">
            <h1 className='loginH1 ' >Simple<span className='spanH1'>Hunt</span></h1>
           <div className="pages_shifting">
-              <h2 className='h1'>Admin Login</h2> <p>or</p>
-            <Link className='link' to="/employee/login"><h2 className='h1'>Employee Login</h2></Link>
+              <h2 className='h1'>Admin Login</h2> 
+           
           </div>
     
       <form onSubmit={onSubmit}>
@@ -54,7 +54,7 @@ export default function AdminLogin() {
         <Link to="/admin/register"></Link>
       </div>
       <div className='link-box'>
-      
+           <Link className='link' to="/employee/login"><h2 className='h1'>Employee Login</h2></Link>
       </div>
     </div>
     </div>
