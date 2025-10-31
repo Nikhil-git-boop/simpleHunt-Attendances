@@ -25,7 +25,7 @@ export default function EmployeeLogin(){
   return (
     <div className="bg-page">
       <div className="center-card">
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo" className="logo" />
           <h1 className='loginH1 ' >Simple<span className='spanH1'>Hunt</span></h1>
       <h2 className='h1'>Employee Login</h2>
       <form onSubmit={onSubmit}>
