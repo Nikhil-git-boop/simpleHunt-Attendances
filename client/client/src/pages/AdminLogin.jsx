@@ -26,7 +26,7 @@ export default function AdminLogin() {
   return (
     <div className="bg-page">
         <div className="center-card">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" className="logo"  />
            <h1 className='loginH1 ' >Simple<span className='spanH1'>Hunt</span></h1>
           <div className="pages_shifting">
               <h2 className='h1'>Admin Login</h2> 
