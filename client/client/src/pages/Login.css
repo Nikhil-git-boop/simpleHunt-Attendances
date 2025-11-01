@@ -18,6 +18,10 @@
 .h1{
     text-align: left;
 }
+.btn-view-details{
+    background-color:#013357;
+  
+}
 .input-box{
   width: 120px;  
   box-sizing: border-box;
