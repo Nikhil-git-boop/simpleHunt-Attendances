@@ -10,7 +10,7 @@ function EmployeeCard({emp, onView}) {
   return (
     <div className="emp-card">
       <h2>Name: {emp.name} </h2>
-      <h2>Employee ID: {emp.employeeId}</h2>
+      <h5>Employee ID: {emp.employeeId}</h5>
       <div>Division: {emp.division}</div>
       <div>
         <label>Month:
