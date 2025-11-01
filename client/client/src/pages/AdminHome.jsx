@@ -9,13 +9,16 @@ function EmployeeCard({emp, onView}) {
   const [month, setMonth] = useState(new Date().getMonth()+1);
   return (
     <div className="emp-card">
-      <h4>{emp.name} ({emp.employeeId})</h4>
+      <h2>Name: {emp.name} </h2>
+      <h2>Employee ID: {emp.employeeId}</h2>
       <div>Division: {emp.division}</div>
       <div>
         <label>Month:
           <input type="number" min="1" max="12" value={month} onChange={e=>setMonth(e.target.value)} />
         </label>
-        <button onClick={() => onView(emp.employeeId, month)}>View Details</button>
+      </div>
+      <div>
+          <button className="btn-view-details" onClick={() => onView(emp.employeeId, month)}>View Details</button>
       </div>
     </div>
   );
