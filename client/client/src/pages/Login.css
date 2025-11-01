@@ -20,7 +20,10 @@
 }
 .btn-view-details{
     background-color:#013357;
-  
+    color:white;
+    margin-top:6px;
+    padding:5px;
+    border-radius:10px;
 }
 .input-box{
   width: 120px;  
