@@ -77,7 +77,7 @@ export default function EmployeeDashboard(){
       <div>{name}</div>
       <div>Local date: {new Date().toLocaleString()}</div>
       <div>Today status: <strong>{todayStatus}</strong></div>
-      <div className="buttons">
+      <div>
         <button  className="present_btn" onClick={()=>mark('present')}>Mark Present</button>
         <button  className="absent_btn" onClick={()=>mark('absent')}>Mark Absent</button>
       </div>
