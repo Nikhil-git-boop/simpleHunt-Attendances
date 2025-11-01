@@ -11,7 +11,8 @@ function EmployeeCard({emp, onView}) {
     <div className="emp-card">
       <h2>Name: {emp.name} </h2>
       <h5>Employee ID: {emp.employeeId}</h5>
-      <div>Division: {emp.division}</div>
+      <div><h5>Division: {emp.division}</h5>
+      </div>
       <div>
         <label>Month:
           <input type="number" min="1" max="12" value={month} onChange={e=>setMonth(e.target.value)} />
